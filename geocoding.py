@@ -64,7 +64,7 @@ class Geocoding:
         if result:
             result = result[0]  # Return the first result as a dictionary
         else:
-            print("Error: Location not found")
+            print("Error: Location unknown")
             return {}
 
         boundingbox = result['boundingbox']
