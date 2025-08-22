@@ -28,7 +28,7 @@ class Geocoding:
             return json.loads(json_text)
         except urllib.error.HTTPError as e:
             if e.code == 429:
-                print("FAILED")
+                print("ERROR: FAILED")
                 print(f"{e.code} {url}")
                 print("NOT 200")
             else:
