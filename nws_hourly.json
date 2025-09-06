@@ -7,7 +7,7 @@
             "geo": "http://www.opengis.net/ont/geosparql#",
             "unit": "http://codes.wmo.int/common/unit/",
             "@vocab": "https://api.weather.gov/ontology#"
-        }
+        } 
     ],
     "type": "Feature",
     "geometry": {
