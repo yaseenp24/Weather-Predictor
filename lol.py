@@ -4,7 +4,7 @@ import json
 data = {
     "message": "Welcome"
 }
-
+ 
 # File path to save the JSON file
 file_path = "hello.json"
 
