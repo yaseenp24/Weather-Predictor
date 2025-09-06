@@ -1,7 +1,7 @@
 import json
 from geocoding import Geocoding
 from weather import Weather
-
+ 
 class Main:
     @staticmethod
     def run():
