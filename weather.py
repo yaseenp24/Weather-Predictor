@@ -115,7 +115,7 @@ class Weather:
 
         extreme_precipitation_chance = float('-inf') if limit == "MAX" else float('inf')
         extreme_precipitation_time = None
-
+ 
         for period in periods[:hours]:
             precipitation_data = period.get('probabilityOfPrecipitation', {})
 
