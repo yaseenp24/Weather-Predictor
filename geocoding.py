@@ -19,7 +19,7 @@ class Geocoding:
             request = urllib.request.Request(url)
             response = urllib.request.urlopen(request)
             if response.getcode() != 200:
-                print("FAILED")
+                print("FAILED!")
                 print(f"{response.getcode()} {url}")
                 print("NOT 200")
                 return {}
@@ -28,21 +28,21 @@ class Geocoding:
             return json.loads(json_text)
         except urllib.error.HTTPError as e:
             if e.code == 429:
-                print("ERROR: FAILED")
+                print("FAILED!")
                 print(f"{e.code} {url}")
                 print("NOT 200")
             else:
-                print("FAILED")
+                print("FAILED!")
                 print(f"{e.code} {url}")
                 print("NOT 200")
             return {}
         except urllib.error.URLError as e:
-            print("FAILED")
+            print("FAILED!")
             print(f"{url}")
             print("NETWORK")
             return {}
         except Exception as e:
-            print("FAILED")
+            print("FAILED!")
             print(f"{url}")
             print("FORMAT")
             return {}
