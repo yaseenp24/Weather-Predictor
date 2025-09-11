@@ -2,7 +2,7 @@ import json
 
 # Data to be written to the JSON file
 data = {
-    "message": "Welcome"
+    "message": "Welcome!"
 }
  
 # File path to save the JSON file
