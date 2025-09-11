@@ -1,6 +1,6 @@
 import json
 
-# Data to be written to the JSON file
+# Data that needs to be written to the JSON file
 data = {
     "message": "Welcome!"
 }
